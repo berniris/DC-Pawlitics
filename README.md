@@ -30,7 +30,7 @@ Ideally I don't want the user to have the ability to delete cat posts so I need 
 
 # Time estimates - By End of Day:
  # Thursday - 
- Have completed pseudo code of all pages, Obtain all pictures for app. Create schema for database. Server config and     basic setup done.
+ Have completed pseudo code of all pages. Obtain all pictures for app. Create schema for database. Server config and basic setup done.
  # Friday -
 Have completed creation of model.
  # Saturday - 
@@ -38,4 +38,4 @@ Have completed views and controller.
  # Sunday - 
  Have completed all 'ejs' files and begin styling. 
  # Monday - 
- Work on finishing touches. Push completed MVP. Create a new branch to implement post MVP features if there is still time. 
+ Work on finishing touches. Push completed MVP. In the unlikely event I have extra time, I plan to create a new branch to implement post MVP features like authorization, authentication, user portal, jquery effects.  
