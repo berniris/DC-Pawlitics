@@ -45,7 +45,8 @@ Ideally I don't want the user to have the ability to delete cat posts so I need 
 1. Completed and tested model.
 2. Remember to push model. 
  ### *Saturday* 
-1. Completed Controller and sizeable dent in Router.
+1. Completed Controller
+2. Sizeable dent in Router.
  ### *Sunday*
  1. Completed Router by early part of day. 
  2. Completed 'ejs' files and begin styling latter part of day. 
