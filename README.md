@@ -31,10 +31,10 @@ The login/sign up links at the top will probably be post MVP. Ideally, I would l
 ## 1. Time mangement!
 I plan to set benchmarks for myself (see Time estimates below) and also follow the practice of starting small, testing it out to see if it works, and then moving on to the next peice. I think this will help me alot with time management because it will decrease my debugging time if I can isolate issues quickly. 
 
-## 2. Incorporating delete part of CRUD. 
+## 2. Fufilling Delete CRUD Requirement. 
 Ideally I don't want the user to have the ability to delete cat posts so I need to have a way for them to have an account to save favorite cats which can be deleted after. This gets into authentication which is something I wanted to focus on post-MVP but 'delete' is a hard requirement for the project. Might just have to allow the user to actually delete from the database :/
 
-# Time estimates - By End of Day:
+# Time Estimates *By End of Day*
  ## Thursday - 
  Have completed pseudo code of all pages. Obtain all pictures for app. Create schema for database. Server config and basic setup done.
  ## Friday -
