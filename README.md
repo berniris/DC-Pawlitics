@@ -6,10 +6,10 @@ I am creating an app based off my friend Masha's Instagram account, DC Fake Mews
 
 # App Flow Description
 
-The user first arrives at a landing page containing login/sign-up links at the top, DC Pawlitics title in the middle and DC Fake Mews as the subtitle. Underneath I'll have three links for them to navigate to the CRUD peices. 
-   #### 1. Meet the Cats - this link will take you to a page which will display or "get all" the cats, their pictures and incude a short bio. 
-   #### 2. Kitty Op-Eds - this page will contain the picture of the cat side by side with their opinion blurb and the hashtags to describe and eventually search for posts. 
-   #### 3. Submit Your Feline - links to a form to submit your cat's name, photo, and age and the part of DC they live and any other facts we should know about their current frustrations with our political system. Masha will be able to use this data to create future posts and feature more cats than ever! 
+ #### The user first arrives at a landing page containing login/sign-up links at the top, DC Pawlitics title in the middle and DC Fake Mews as the subtitle. Underneath I'll have three links for them to navigate to the CRUD peices. 
+  1. Meet the Cats - this link will take you to a page which will display or "get all" the cats, their pictures and incude a short bio. 
+  2. Kitty Op-Eds - this page will contain the picture of the cat side by side with their opinion blurb and the hashtags to describe and eventually search for posts. 
+  3. Submit Your Feline - links to a form to submit your cat's name, photo, and age and the part of DC they live and any other facts we should know about their current frustrations with our political system. Masha will be able to use this data to create future posts and feature more cats than ever! 
 
 The login/sign up links at the top will probably be post MVP. Ideally, I would like the user to be able to register for an account which will assign them a portal where they can add and delete favorite cats. The registration form will require them to select a username and password for return visits. 
 
@@ -36,12 +36,24 @@ Ideally I don't want the user to have the ability to delete cat posts so I need 
 
 # Time Estimates - *By End of Day:*
  ### *Thursday* 
- Have completed pseudo code of all pages. Obtain all pictures for app. Create schema for database. Server config and basic setup done.
+ 1. Completed pseudo code of all pages. 
+ 2. Obtain all pictures for app. 
+ 3. Create schema for database and insert all data. 
+ 4. Server/database config and basic setup done.
+ 5. Remember to push completed work. 
  ### *Friday*
-Have completed creation of model.
+1. Completed and tested model.
+2. Remember to push model. 
  ### *Saturday* 
-Have completed views and controller. 
+1. Completed Controller and sizeable dent in Router.
  ### *Sunday*
- Have completed all 'ejs' files and begin styling. 
- ### *Monday* 
- Work on finishing touches. Push completed MVP. In the unlikely event I have extra time, I plan to create a new branch to implement post MVP features like authorization, authentication, user portal, jquery effects.  
+ 1. Completed Router by early part of day. 
+ 2. Completed 'ejs' files and begin styling latter part of day. 
+ ### *Monday* - Hopefully dedicated purely to finishing touches: 
+ 1. Push final completed MVP. 
+ 2. In the unlikely event I have extra time, create a new branch to implement post MVP features like:
+ * authorization
+ * authentication
+ * user portal creation
+ * api useage 
+ * jquery effects
