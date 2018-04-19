@@ -1,5 +1,5 @@
-[# DC-Pawlitics](https://www.instagram.com/dcfakemews/)
-[## **DC Fake Mews**](https://www.instagram.com/dcfakemews/)
+# DC-Pawlitics
+## **DC Fake Mews**
 
 # User Story 
 I am creating an app based off my friend Masha's Instagram account, [DC Fake Mews](https://www.instagram.com/dcfakemews/). Masha collects and posts pictures of cats we know and creates political blurbs in the voice of the cat. Each post is filled with tons of puns and we want [DC Fake Mews](https://www.instagram.com/dcfakemews/) to go viral so I am creating a web app version to increase exposure and get non Instagram folks following. 
