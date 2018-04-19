@@ -6,7 +6,9 @@ I am creating an app based off my friend Masha's Instagram account, [DC Fake Mew
 
 # App Flow Description
 
- #### The user first arrives at a landing page containing login/sign-up links at the top, DC Pawlitics title in the middle and DC Fake Mews as the subtitle. Underneath I'll have three links for them to navigate to the CRUD peices. 
+ #### The user first arrives at a landing page containing login/sign-up links at the top, DC Pawlitics title in the middle and DC Fake Mews as the subtitle. 
+ 
+#### Underneath I'll have three links for them to navigate to the CRUD peices:
   1. Meet the Cats - this link will take you to a page which will display or "get all" the cats, their pictures and incude a short bio. 
   2. Kitty Op-Eds - this page will contain the picture of the cat side by side with their opinion blurb and the hashtags to describe and eventually search for posts. 
   3. Submit Your Feline - links to a form to submit your cat's name, photo, and age and the part of DC they live and any other facts we should know about their current frustrations with our political system. Masha will be able to use this data to create future posts and feature more cats than ever! 
