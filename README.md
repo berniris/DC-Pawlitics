@@ -16,20 +16,20 @@ The login/sign up links at the top will probably be post MVP. Ideally, I would l
 # Data Structure 
 
 ## Table 1
-*Table name:* Cats
-*Data:*
-#### id 
-#### name
-#### img_url 
+#### Table Name: Cats
+##### Data:
+*id 
+*name
+*img_url 
 
 ## Table 2 
-*Table name:* Blurbs
-*Data*
-#### id
-#### text_blurb
-#### hashtags
-#### cat_id
-#### month *TBD - post MVP*
+#### Table name: Blurbs
+#####Data
+*id
+*text_blurb
+*hashtags
+*cat_id
+*month *TBD - post MVP*
 
 
 # Wireframes
