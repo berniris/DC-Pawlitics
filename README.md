@@ -1,8 +1,8 @@
-# DC-Pawlitics
-## **DC Fake Mews**
+[# DC-Pawlitics](https://www.instagram.com/dcfakemews/)
+[## **DC Fake Mews**](https://www.instagram.com/dcfakemews/)
 
 # User Story 
-I am creating an app based off my friend Masha's Instagram account, DC Fake Mews. Masha collects and posts pictures of cats we know and creates political blurbs in the voice of the cat. Each post is filled with tons of puns and we want DC Fake Mews to go viral so I am creating a web app version to increase exposure and get non Instagram folks following. 
+I am creating an app based off my friend Masha's Instagram account, [DC Fake Mews](https://www.instagram.com/dcfakemews/). Masha collects and posts pictures of cats we know and creates political blurbs in the voice of the cat. Each post is filled with tons of puns and we want [DC Fake Mews](https://www.instagram.com/dcfakemews/) to go viral so I am creating a web app version to increase exposure and get non Instagram folks following. 
 
 # App Flow Description
 
@@ -24,7 +24,7 @@ The login/sign up links at the top will probably be post MVP. Ideally, I would l
 
 ## Table 2 
 #### Table name: Blurbs
-#####Data
+##### Data
 * id
 * text_blurb
 * hashtags
