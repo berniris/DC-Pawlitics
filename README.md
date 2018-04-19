@@ -16,8 +16,21 @@ The login/sign up links at the top will probably be post MVP. Ideally, I would l
 # Data Structure 
 
 ## Table 1
+*Table name:* Cats
+*Data:*
+#### id 
+#### name
+#### img_url 
 
-## Table 2
+## Table 2 
+*Table name:* Blurbs
+*Data*
+#### id
+#### text_blurb
+#### hashtags
+#### cat_id
+#### month *TBD - post MVP*
+
 
 # Wireframes
 
@@ -32,7 +45,7 @@ The login/sign up links at the top will probably be post MVP. Ideally, I would l
 I plan to set benchmarks for myself (see Time estimates below) and also follow the practice of starting small, testing it out to see if it works, and then moving on to the next peice. I think this will help me alot with time management because it will decrease my debugging time if I can isolate issues quickly. 
 
 ### 2. Fufilling Delete CRUD Requirement. 
-Ideally I don't want the user to have the ability to delete cat posts so I need to have a way for them to have an account to save favorite cats which can be deleted after. This gets into authentication which is something I wanted to focus on post-MVP but 'delete' is a hard requirement for the project. Might just have to allow the user to actually delete from the database :/
+Ideally I don't want the user to have the ability to delete cat posts just for the sake of fufilling the requirement. Therefore, I need to have a way for them to have an account to save favorite cats which can be deleted after. This gets into authentication which is something I wanted to focus on post-MVP. I might just have to create a way for the user to delete from the database which doesn't really make sense but time might not allow me another choice. :/
 
 # Time Estimates - *By End of Day:*
  ### *Thursday* 
@@ -50,7 +63,7 @@ Ideally I don't want the user to have the ability to delete cat posts so I need 
  ### *Sunday*
  1. Completed Router by early part of day. 
  2. Completed 'ejs' files and begin styling latter part of day. 
- ### *Monday* - Hopefully dedicated purely to finishing touches: 
+ ### *Monday* - Hopefully dedicated solely to finishing touches: 
  1. Push final completed MVP. 
  2. In the unlikely event I have extra time, create a new branch to implement post MVP features like:
  * authorization
