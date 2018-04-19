@@ -15,10 +15,9 @@ The login/sign up links at the top will probably be post MVP. Ideally, I would l
 
 ## Wireframes
 
-![img_1694 1](https://git.generalassemb.ly/storage/user/9780/files/92070a5e-4344-11e8-9177-edced0cca681)
-![img_1695 1](https://git.generalassemb.ly/storage/user/9780/files/a6654ef2-4344-11e8-9bbb-523157cee612)
-![img_1696 1](https://git.generalassemb.ly/storage/user/9780/files/b0d08d16-4344-11e8-827e-ce69956d9adb)
-
+![img_1694 2](https://git.generalassemb.ly/storage/user/9780/files/0c7ea7c4-4345-11e8-9886-948df9e2eca1)
+![img_1695 2](https://git.generalassemb.ly/storage/user/9780/files/0c7ea7c4-4345-11e8-9886-948df9e2eca1)
+![img_1696 2](https://git.generalassemb.ly/storage/user/9780/files/0c7ea7c4-4345-11e8-9886-948df9e2eca1)
 
 
 # Potential Challenges/Roadblocks
