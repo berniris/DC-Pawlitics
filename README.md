@@ -4,7 +4,7 @@
 # User Story 
 I am creating an app based off my friend Masha's Instagram account, DC Fake Mews. Masha collects and posts pictures of cats in our lives and cats all over DC and creates political blurbs in the voice of the cat. Each post is filled with tons of puns and we want DC Fake Mews to go viral so I am creating a web app version to increase exposure and get non Instagram folks following. 
 
-## Here's how the flow of the app will work:
+## App Flow Description
 
 The user first arrives at a landing page containing login/sign-up links at the top, DC Pawlitics title in the middle and DC Fake Mews as the subtitle. Underneath I'll have three links for them to navigate to the CRUD peices. 
    1. Meet the Cats - this link will take you to a page which will display or "get all" the cats, their pictures and incude a short bio. 
