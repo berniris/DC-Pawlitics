@@ -28,15 +28,14 @@ I plan to set benchmarks for myself (see Time estimates below) and also follow t
 ## 2. Incorporating delete part of CRUD. 
 Ideally I don't want the user to have the ability to delete cat posts so I need to have a way for them to have an account to save favorite cats which can be deleted after. This gets into authentication which is something I wanted to focus on post-MVP but 'delete' is a hard requirement for the project. Might just have to allow the user to actually delete from the database :/
 
-# Time estimates
-## End of Day:
+# Time estimates - By End of Day:
  # Thursday - 
- Completed pseudo code of all pages, Obtain all pictures for app. Create schema for database. Server config and     basic setup done.
+ Have completed pseudo code of all pages, Obtain all pictures for app. Create schema for database. Server config and     basic setup done.
  # Friday -
- Complete creation of model.
+Have completed creation of model.
  # Saturday - 
- Complete views and controller. 
+Have completed views and controller. 
  # Sunday - 
- Complete all 'ejs' files and begin styling. 
+ Have completed all 'ejs' files and begin styling. 
  # Monday - 
  Work on finishing touches. Push completed MVP. Create a new branch to implement post MVP features if there is still time. 
