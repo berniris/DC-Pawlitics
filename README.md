@@ -1,5 +1,5 @@
-## DC-Pawlitics
-# DC Fake Mews 
+# DC-Pawlitics
+## DC Fake Mews 
 
 # User Story 
 I am creating an app based off my friend Masha's Instagram account, DC Fake Mews. Masha collects and posts pictures of cats in our lives and cats all over DC and creates political blurbs in the voice of the cat. Each post is filled with tons of puns and we want DC Fake Mews to go viral so I am creating a web app version to increase exposure and get non Instagram folks following. 
