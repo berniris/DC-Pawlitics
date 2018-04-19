@@ -24,12 +24,12 @@ The login/sign up links at the top will probably be post MVP. Ideally, I would l
 
 ## Table 2 
 #### Table name: Blurbs
-##### Data
+##### Data:
 * id
 * text_blurb
 * hashtags
 * cat_id
-* month *TBD - post MVP*
+* month *TBD - (post MVP at the very least)*
 
 
 # Wireframes
