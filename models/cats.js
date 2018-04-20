@@ -31,7 +31,8 @@ function createCat(cat) {
   return queryPromise;
 }
 
-// createCat("mindy", "http://google.com/image.png", "Democat", "Abortion").then(data => console.log(data));
+getAllCats().then(data => console.log(data));
+
 
 module.exports = {
   getAllCats,

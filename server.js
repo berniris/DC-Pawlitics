@@ -18,6 +18,9 @@ const app = express();
 // declare pot to be passed to app.listen
 const PORT = process.env.PORT || 3000;
 
+// require routes
+const catsRouter = require('./routes/catsRouter');
+
 // establish rendering engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -36,16 +39,7 @@ app.get('/', (req, res) => {
   res.send('hello');
 });
 
-// app.get('/cats', (req, res) => {
-//   catsModel.getAllCats()
-//   .then(cats => {
-//     res.json({cats: cats});
-//     // res.locals.cats = cats;
-//   }).catch(err => {
-//     console.log(err);
-//     res.status(403).json({msg:'oopsie'});
-//   });
-// });
+app.use('/cats', catsRouter);
 
 app.listen(PORT, () => {
   console.log(`listening on PORT ${PORT}!`);
