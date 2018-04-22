@@ -10,6 +10,8 @@ function sendCats (req, res) {
   })
 }
 
+console.log()
+
 function sendOneCat (req, res) {
   res.render('cats/show', {
     cat: res.locals.cat,
@@ -17,21 +19,31 @@ function sendOneCat (req, res) {
   })
 }
 
-function sendCreateCat (req, res) {
-  console.log('I am rendering the index page');
-  res.render('cats/index');
+
+function submitCat(req, res) {
+  res.render('cats/new', {
+    cat: res.locals.newCat
+  })
 }
+
+function sendCreateCat (req, res) {
+  cat = res.locals.newCat
+  res.redirect(`cats/${cat.id}`);
+}
+
+
+
 
    // res.redirect(`cats/${cat.id}`);
     // console.log(newCat)
 
-console.log(sendCreateCat());
 
 module.exports = {
   renderLanding,
   sendCats,
   sendOneCat,
-  sendCreateCat
+  sendCreateCat,
+  submitCat
 }
 
 

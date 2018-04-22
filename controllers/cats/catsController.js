@@ -23,7 +23,11 @@ function getOneCat(req, res, next) {
   .catch(err => {
     next(err);
   })
+  console.log(req.params.id)
 }
+
+console.log(catsDb);
+
 
 function getOneBlurb(req, res, next) {
   blurbsDb.getOneBlurb(req.params.id)
@@ -36,24 +40,23 @@ function getOneBlurb(req, res, next) {
   })
 }
 
-// function create(req, res, next) {
-//   catsDb.createCat(req.body)
-//   .then(data => {
-//     res.locals.newCat = data;
-//     next();
-//   })
-//   .catch(err => {
-//     next(err);
-//   })
-// }
+function create(req, res, next) {
+  catsDb.createCat(req.body)
+  .then(data => {
+    res.locals.newCat = data;
+    next();
+  })
+  .catch(err => {
+    next(err);
+  })
+}
 
-// console.log(create());
-console.log(catsDb.createCat())
+// console.log(catsDb.createCat())
 
 
 module.exports = {
   getAll,
   getOneCat,
   getOneBlurb,
-  // create
+  create
 }

@@ -6,12 +6,15 @@ function getAllCats() {
   return queryPromise;
 }
 
+
+
 function getOneCat(id) {
   const queryPromise = db.one(`
     SELECT * FROM cats
     WHERE id = $1`, id);
   return queryPromise;
 }
+
 
 // function getBlurbByCat(id) {
 //   const queryPromise = db.any(`

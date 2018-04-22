@@ -1,2 +1,11 @@
 <% include ../../partials/boilerplate %>
-<h1>Hello</h1>
+<form action="/cats" method="POST">
+<input type="text" name="name" placeholder="Your Cat's Name"/><br>
+<input type="text" name="img_url" placeholder="Upload a picture of your cat"/><br>
+<select id="affiliation" name="affiliation"/>
+<p>Select your cat's political affiliation</p>
+<option>Democat</option><option>Republicat</option>
+</select><br>
+<input type="text" name="issue" placeholder="Pick a political issue of importance for your cat"/>
+<input type="submit" value="Submit"/>
+</form>
