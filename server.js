@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 // const methodOverride = require('method-override');
 
 const catsModel = require('./models/cats');
-
+const catsController = require('./controllers/cats/catsController');
 
 //require routers
 
@@ -20,6 +20,7 @@ const PORT = process.env.PORT || 3000;
 
 // require routes
 const catsRouter = require('./routes/catsRouter');
+
 
 // establish rendering engine
 app.set('view engine', 'ejs');
@@ -35,11 +36,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 //app.use(methodOveride(''));
 
 // render homepage for when user arrives to the app
-app.get('/', (req, res) => {
-  res.send('hello');
-});
+app.use('/', catsRouter);
 
-app.use('/cats', catsRouter);
 
 app.listen(PORT, () => {
   console.log(`listening on PORT ${PORT}!`);

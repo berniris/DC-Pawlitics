@@ -1,9 +1,7 @@
 const catsDb = require('../../models/cats');
-console.log(catsDb);
-console.log(getAll())
+const blurbsDb = require('../../models/blurbs');
 
 function getAll (req, res, next) {
-   console.log(data);
   console.log('About to get all the cats');
   catsDb.getAllCats()
   .then(data => {
@@ -16,10 +14,10 @@ function getAll (req, res, next) {
   })
 }
 
-function getOne(req, res, next) {
+function getOneCat(req, res, next) {
   catsDb.getOneCat(req.params.id)
   .then(data => {
-    res.locals.cats = data;
+    res.locals.cat = data;
     next();
   })
   .catch(err => {
@@ -27,6 +25,35 @@ function getOne(req, res, next) {
   })
 }
 
+function getOneBlurb(req, res, next) {
+  blurbsDb.getOneBlurb(req.params.id)
+  .then(data => {
+    res.locals.blurb = data;
+    next();
+  })
+  .catch(err => {
+    next(err);
+  })
+}
+
+// function create(req, res, next) {
+//   catsDb.createCat(req.body)
+//   .then(data => {
+//     res.locals.newCat = data;
+//     next();
+//   })
+//   .catch(err => {
+//     next(err);
+//   })
+// }
+
+// console.log(create());
+console.log(catsDb.createCat())
+
+
 module.exports = {
-  getAll: getAll
+  getAll,
+  getOneCat,
+  getOneBlurb,
+  // create
 }

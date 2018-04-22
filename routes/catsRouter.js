@@ -12,7 +12,13 @@ function sendError(err, req, res, next) {
   })
 }
 
+catsRouter.route('/').get(catsViewController.renderLanding, sendError);
 catsRouter.route('/cats').get(catsController.getAll, catsViewController.sendCats, sendError);
+catsRouter.route('/cats/:id').get(catsController.getOneCat, catsController.getOneBlurb, catsViewController.sendOneCat, sendError)
+catsRouter.route('/cats/submit').get(catsViewController.sendCreateCat, sendError);
+// console.log(catsViewController.sendCreateCat);
+// catsRouter.route('/submit').post(catsController.create, catsViewController.sendCreateCat, sendError)
+
 
 module.exports = catsRouter;
 

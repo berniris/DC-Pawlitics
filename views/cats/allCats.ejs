@@ -1,0 +1,14 @@
+
+<% include ../../partials/boilerplate %>
+<div class="cats">
+These are the cats
+<% cats.forEach((cat) => { %>
+<a href="/cats/<%=cat.id%>"><h2><%=cat.name%></h2></a>
+<img src="<%=cat.img_url%>"/>
+<%}) %>
+</div>
+
+
+
+
+

@@ -13,6 +13,7 @@ function getOneBlurb(id) {
   return queryPromise;
 }
 
-module.exports {
-  getAllBlurbs;
+module.exports = {
+  getAllBlurbs,
+  getOneBlurb
 }

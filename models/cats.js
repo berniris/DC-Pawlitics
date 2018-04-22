@@ -1,4 +1,4 @@
-const db = require('../config/connection')
+const db = require('../config/connection');
 
 function getAllCats() {
   const queryPromise = db.manyOrNone (`
@@ -13,13 +13,13 @@ function getOneCat(id) {
   return queryPromise;
 }
 
-function getBlurbByCat(id) {
-  const queryPromise = db.any(`
-    SELECT * FROM blurbs
-    JOIN cats ON cats.id = blurbs.cat_id
-    WHERE blurbs.cat_id = $1`, id);
-  return queryPromise;
-}
+// function getBlurbByCat(id) {
+//   const queryPromise = db.any(`
+//     SELECT * FROM blurbs
+//     JOIN cats ON cats.id = blurbs.cat_id
+//     WHERE blurbs.cat_id = $1`, id);
+//   return queryPromise;
+// }
 
 function createCat(cat) {
   const queryPromise = db.one(`
@@ -31,11 +31,12 @@ function createCat(cat) {
   return queryPromise;
 }
 
-getAllCats().then(data => console.log(data));
-
 
 module.exports = {
   getAllCats,
   getOneCat,
-  getBlurbByCat
+  // getBlurbByCat,
+  createCat
 }
+
+
