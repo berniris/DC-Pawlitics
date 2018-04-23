@@ -1,11 +1,25 @@
 <% include ../../partials/boilerplate %>
+
+<div class="form-page">
+<div class="add">
+
 <form action="/cats" method="POST">
-<input type="text" name="name" placeholder="Your Cat's Name"/><br>
-<input type="text" name="img_url" placeholder="Upload a picture of your cat"/><br>
-<select id="affiliation" name="affiliation"/>
-<p>Select your cat's political affiliation</p>
-<option>Democat</option><option>Republicat</option>
-</select><br>
-<input type="text" name="issue" placeholder="Pick a political issue of importance for your cat"/>
-<input type="submit" value="Submit"/>
+  <input type="text" name="name" value="name" /><br>
+  <input type="text" name="img_url" value="img_url" /><br>
+  <input type="text" name="blurb" value="blurb" /><br>
+<input type="text" name="hashtags" value="hashtags" /><br>
+<input type="text" name="issue" value="issue" /><br>
+<select name="affiliation_id">
+    <% affiliation.forEach((affiliation) => { %>
+      <option value="<%=affiliation.id%>"><%=affiliation.name%></option>
+    <% }) %>
+  </select> <br>
+   <br>
+  <input type="submit" value="Submit Cat" />
 </form>
+</div>
+<a href="/cats"> Back to the cats </a>
+</div>
+
+<% include ../../partials/end %>
+

@@ -10,19 +10,16 @@ function sendCats (req, res) {
   })
 }
 
-console.log()
-
 function sendOneCat (req, res) {
   res.render('cats/show', {
-    cat: res.locals.cat,
-    blurb: res.locals.blurb
+    cat: res.locals.cat
   })
 }
 
 
 function submitCat(req, res) {
   res.render('cats/new', {
-    cat: res.locals.newCat
+    cats: res.locals.cat
   })
 }
 
@@ -30,6 +27,22 @@ function sendCreateCat (req, res) {
   cat = res.locals.newCat
   res.redirect(`cats/${cat.id}`);
 }
+
+function editCat(req, res) {
+  cat = res.locals.cat
+  res.render(`cats/edit`, {
+    cat: res.locals.cat
+  })
+}
+
+function deleteCat(req, res) {
+  res.redirect(`cats/index`);
+}
+
+
+
+
+
 
 
 
@@ -43,7 +56,9 @@ module.exports = {
   sendCats,
   sendOneCat,
   sendCreateCat,
-  submitCat
+  submitCat,
+  editCat,
+  deleteCat
 }
 
 

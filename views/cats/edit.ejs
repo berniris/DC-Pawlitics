@@ -1,0 +1,23 @@
+<% include ../../partials/boilerplate %>
+
+<div class="form-page">
+<div class="add">
+
+<form action="/cats/<%=cat.id%>?_method=PUT" method="POST">
+  <input type="text" name="name" value="<%=cat.name%>" /><br>
+  <input type="text" name="img_url" value="<%=cat.img_url%>" /><br>
+  <input type="text" name="issue" value="<%=cat.issue%>" /><br>
+  <input type="text" name="blurb" value="<%=cat.blurb%>" /><br>
+  <input type="text" name="hashtags" value="<%=cat.hashtags%>" /><br>
+  <select name="affiliation_id">
+    <% affiliation.forEach((affiliation) => { %>
+      <option value="<%=affiliation.id%>"><%=affiliation.name%></option>
+    <% }) %>
+  </select> <br>
+  <input type="submit" value="Edit Cat" />
+</form>
+</div>
+<a href="/cats"> Back to Cats </a>
+</div>
+
+<% include ../../partials/end %>

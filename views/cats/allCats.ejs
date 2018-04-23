@@ -1,12 +1,13 @@
 
 <% include ../../partials/boilerplate %>
 <div class="cats">
-These are the cats
+Click on a cat to read their thoughts.
 <% cats.forEach((cat) => { %>
+<div class="flex-item">
 <a href="/cats/<%=cat.id%>"><h2><%=cat.name%></h2></a>
-<img src="<%=cat.img_url%>"/>
-<p><%=cat.affiliation%></p>
-<p><%=cat.issue%></p>
+<div class="cat-header" style="background-image: url('<%=cat.img_url%>')">
+</div>
+<p>Issue of importance to <%=cat.name%>: <%=cat.issue%></p>
 <%}) %>
 </div>
 

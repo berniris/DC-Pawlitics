@@ -5,7 +5,7 @@ const path = require('path');
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-// const methodOverride = require('method-override');
+const methodOverride = require('method-override');
 
 const catsModel = require('./models/cats');
 const catsController = require('./controllers/cats/catsController');
@@ -33,7 +33,7 @@ app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-//app.use(methodOveride(''));
+app.use(methodOverride('_method'));
 
 // render homepage for when user arrives to the app
 app.use('/', catsRouter);
