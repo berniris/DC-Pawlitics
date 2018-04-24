@@ -49,12 +49,14 @@ function edit(req, res) {
 
 function update(req, res, next) {
   req.body.id = req.params.id;
-  catsDb.updateCat(req.body)
+  catsDb.updateCat(req.body.id)
     .then(data => {
       res.redirect(`/cats/${req.body.id}`)
+      console.log('WE MADE IT');
+      next();
     })
     .catch(err=> {
-      err:err
+      next(err);
     })
 }
 

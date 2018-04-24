@@ -20,13 +20,13 @@ catsRouter.route('/cats')
   .get(catsController.getAll,catsViewController.sendCats, sendError)
   .post(catsController.createCat, catsViewController.sendCreateCat, sendError)
 
+catsRouter.route('/cats/:id/edit')
+.get(catsController.getOneCat, affiliationController.getAll, catsViewController.editCat, sendError)
+
 catsRouter.route('/cats/:id')
   .get(catsController.getOneCat, catsViewController.sendOneCat)
   .put(catsController.update)
   .delete(catsController.destroy, catsViewController.deleteCat)
-
-catsRouter.route('/cats/:id/edit')
-.get(catsController.getOneCat, affiliationController.getAll, catsViewController.editCat, sendError)
 
 catsRouter.route('/submit').get(catsController.getAll, affiliationController.getAll, catsViewController.submitCat, sendError)
 

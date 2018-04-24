@@ -18,14 +18,12 @@ function getOneCat(id) {
 function updateCat(cat) {
   const query = db.one(`
     UPDATE cats
-    SET name = $/name/ = $/name/, img_url = $/img_url/, $/blurb/ = $/blurb/, $/hashtags/ = /hashtags/, $/issue/ = /issue/, affiliation = $/affiliation/, issue = $/issue/
+    SET name = $/name/, img_url = $/img_url/, /blurb/ = $/blurb/, /hashtags/ = $/hashtags/, /issue/ = $/issue/, affiliation = $/affiliation/
     WHERE id = $/id/
     RETURNING *`,
     cat );
   return query;
 }
-
-// getOneCat(2).then(data => console.log(data));
 
 // getUserCats(1).then(data => console.log(data));
 
