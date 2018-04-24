@@ -23,12 +23,14 @@ Ideally, I would like the user to be able to register for an account which will 
 # Technologies:
 1. Node
 2. Express.js 
- * Package Modules:
- ** PG-Promise - makes creating apps with Node & SQL simpler
- ** Morgan - provides us with more useful errors for speedier debugging
- ** EJS - templating language for creating markup in express
- ** Method Override 
- ** Body Parser
+
+ *Package Modules:
+ **PG-Promise - makes creating apps with Node & SQL simpler
+ **Morgan - provides us with more useful errors for speedier debugging
+ **EJS - templating language for creating markup in express
+ **Method Override 
+ **Body Parser
+
 3. PostgreSQL 
 
 # Install Instructions:
