@@ -1,5 +1,7 @@
+// require the database config file
 const db = require('../config/connection');
 
+// get All function
 function getAllCats() {
   const queryPromise = db.manyOrNone (`
     SELECT * FROM cats`);
@@ -8,6 +10,7 @@ function getAllCats() {
 
 // getAllCats().then(data => console.log(data));
 
+// get One function
 function getOneCat(id) {
   const queryPromise = db.one(`
     SELECT * FROM cats
@@ -27,14 +30,16 @@ function updateCat(cat) {
 
 // getUserCats(1).then(data => console.log(data));
 
-function getAffiliationByCat(id) {
-  const queryPromise = db.any(`
-    SELECT * FROM affiliation
-    JOIN cats ON cats.id = affiliation.cat_id
-    WHERE affiliation.cat_id = $1`, id);
-  return queryPromise;
-}
 
+// function getAffiliationByCat(id) {
+//   const queryPromise = db.any(`
+//     SELECT * FROM affiliation
+//     JOIN cats ON cats.id = affiliation.cat_id
+//     WHERE affiliation.cat_id = $1`, id);
+//   return queryPromise;
+// }
+
+// create a new cat
 function createCat(cat) {
   const queryPromise = db.one(`
     INSERT INTO cats
@@ -45,6 +50,7 @@ function createCat(cat) {
   return queryPromise;
 }
 
+// delete a cat from the database
 function deleteCat(id) {
   const queryPromise = db.none(`
     DELETE FROM cats

@@ -1,10 +1,15 @@
+// store router for cats in variable
 const catsRouter = require('express').Router();
+
+// require controllers
 const catsController = require('../controllers/cats/catsController');
 const catsViewController = require('../controllers/cats/catsViewController');
 const affiliationController = require('../controllers/affiliations/affiliationController');
 
+// model to query cat table
 const catsDb = require('../models/cats');
 
+// sends error
 function sendError(err, req, res, next) {
   console.log('I send errors');
   res.status(500).json({
@@ -13,6 +18,7 @@ function sendError(err, req, res, next) {
   })
 }
 
+// paths for app
 catsRouter.route('/')
 .get(catsViewController.renderLanding, sendError)
 
