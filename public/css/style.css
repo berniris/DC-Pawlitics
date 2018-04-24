@@ -1,7 +1,7 @@
 @import url (https://fonts.googleapis.com/css?family=Dosis);
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family:'Cousine', monospace;
 }
 
 .flex-container {
@@ -19,24 +19,108 @@ body {
   justify-content: space-around;
 }
 
-.flex-item {
-  background: blue;
-  padding: 5px;
-  width: 400px;
-  height: 400px;
-  margin-top: 10px;
+.landing-flex {
+max-width: 50%;
+}
 
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
+.spotlight-item {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
+.flex-item {
+/*  background: blue;*/
+  padding: 5px;
+  width: 500px;
+  height: 500px;
+  margin-top: 10px;
   text-align: center;
 }
 
 .cat-header {
-        width: 357.98px;
-        height: 150px;
+
+        margin-left: 30px;
+        width: 420px;
+        height: 270px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        margin-top: -10px;
+        border: 1px solid #813772;
 }
+
+.spotlight-header {
+
+        margin-left: 30px;
+        width: 900px;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-top: -10px;
+        border: 2px solid #062F4F;
+}
+
+
+.issue {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: #062F4F
+}
+
+/* visited link */
+a:visited {
+    color: #062F4F
+}
+
+/* mouse over link */
+a:hover {
+    color: #062F4F
+}
+
+/* selected link */
+a:active {
+    color: #062F4F
+}
+
+.landing-img {
+  margin-right: -300px;
+  background-image: url('http://s1.1zoom.me/b2860/974/Creative_Cats_Milk_Highball_glass_Book_Window_525394_2048x1536.jpg');
+  background-size: 400px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+/*  border-bottom: 0;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+h1, h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.meow {
+  color: #813772;
+}
+
+.issue-color {
+  color: #062F4F;
+}
+
+.spotlight-name {
+  font-size: 50px;
+}
+
