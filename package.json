@@ -8,6 +8,10 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
+  "engines": {
+    "node": "9.8.0",
+    "npm" : "5.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/berniris/DC-Pawlitics.git"
