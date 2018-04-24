@@ -51,14 +51,14 @@ function deleteCat(req, res) {
     // console.log(newCat)
 
 
-module.exports = {
-  renderLanding,
-  sendCats,
-  sendOneCat,
-  sendCreateCat,
-  submitCat,
-  editCat,
-  deleteCat
-}
+    module.exports = {
+      renderLanding,
+      sendCats,
+      sendOneCat,
+      sendCreateCat,
+      submitCat,
+      editCat,
+      deleteCat
+    }
 
 
