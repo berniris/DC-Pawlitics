@@ -1,12 +1,12 @@
 # DC-Pawlitics
-## **DC Fake Mews**
+#### **DC Fake Mews**
 
 # User Story 
 I created an app based off my friend Masha's Instagram account, [DC Fake Mews](https://www.instagram.com/dcfakemews/). Masha collects and posts pictures of cats we know and creates political blurbs in the voice of the cat. We want [DC Fake Mews](https://www.instagram.com/dcfakemews/) to go viral so I am creating a web app version to increase exposure and get non Instagram folks following. 
 
-## App Flow Description
+### App Flow Description
 
- #### The user first arrives at a landing page containing login/sign-up links at the top, DC Pawlitics title in the middle and DC Fake Mews as the subtitle. 
+ The user first arrives at a landing page containing login/sign-up links at the top, DC Pawlitics title in the middle and DC Fake Mews as the subtitle. 
  
 #### Underneath are three links to navigate to the CRUD peices:
   1. Meet the Cats - takes you to a page which displays all the cats and a link to their indviidual profiles.
