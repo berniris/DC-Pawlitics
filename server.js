@@ -1,3 +1,6 @@
+// loading env variables from .env file into process.env object
+const private = require('dotenv').config();
+
 // load built-in modules
 const path = require('path');
 
