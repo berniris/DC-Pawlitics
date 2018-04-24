@@ -21,9 +21,15 @@ A separate portal for users to submit their cat.
 Ideally, I would like the user to be able to register for an account which will assign them a portal where they can add and delete favorite cats to view later. The registration form will require them to select a username and password for return visits. 
 
 # Technologies:
-Node
-Express.js (Package Modules: PG-Promise - makes creating apps with Node & SQL simpler, Morgan - provides us with more useful errors for speedier debugging, EJS - templating language for creating markup in express, Method Override 
-PostgreSQL 
+1. Node
+2. Express.js 
+ * Package Modules:
+ ** PG-Promise - makes creating apps with Node & SQL simpler
+ ** Morgan - provides us with more useful errors for speedier debugging
+ ** EJS - templating language for creating markup in express
+ ** Method Override 
+ ** Body Parser
+3. PostgreSQL 
 
 # Install Instructions:
 Clone the repo and once in the folder *npm i* to install dependencies. Run the command *npm run dev* to 
