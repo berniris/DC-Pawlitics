@@ -1,95 +1,24 @@
 @import url (https://fonts.googleapis.com/css?family=Dosis);
 
-body {
-  font-family:'Cousine', monospace;
+@font-face {
+font-family: "Miller-Regular";
+src: url("css/fonts/Miller-Regular.eot");
+src: url("css/fonts/Miller-Regular.tff");
+src: url("css/fonts/Miller-Regular.woff") format("woff");
+src: url("css/fonts/Miller-Regular.otf") format("opentype");
+src: url("css/fonts/Miller-Regular.svg#filename") format("svg");
+font-weight: normal;
+font-style: normal;
 }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+body {
+  font-family:'Cousine', monospace;
+  background-color: #870000;
 }
 
 .landing-flex {
-max-width: 50%;
-}
-
-.spotlight-item {
-  width: 200px;
-  height: 100px;
-  text-align: center;
-}
-
-.flex-item {
-/*  background: blue;*/
-  padding: 5px;
-  width: 500px;
-  height: 500px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.cat-header {
-
-        margin-left: 30px;
-        width: 420px;
-        height: 270px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        margin-top: -10px;
-        border: 1px solid #813772;
-}
-
-.spotlight-header {
-
-        margin-left: 30px;
-        width: 900px;
-        height: 300px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        margin-top: -10px;
-        border: 2px solid #062F4F;
-}
-
-
-.issue {
-  padding-bottom: 10px;
-  font-size: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* unvisited link */
-a:link {
-    color: #062F4F
-}
-
-/* visited link */
-a:visited {
-    color: #062F4F
-}
-
-/* mouse over link */
-a:hover {
-    color: #062F4F
-}
-
-/* selected link */
-a:active {
-    color: #062F4F
+  max-width: 50%;
 }
 
 .landing-img {
@@ -107,20 +36,116 @@ a:active {
   box-sizing: border-box;
 }
 
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cat {
+  padding: 5px;
+  width: 500px;
+  height: 500px;
+  margin-top: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cat-header {
+  width: 420px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 30%;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+}
+
+.portrait {
+  width: 570px;
+  height: 300px;
+  border: 1px solid #ffffff;
+  background-color: rgba(128,128,128,0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -20px;
+}
+
+
+.issue {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: #062F4F
+}
+
+/* visited link */
+a:visited {
+  color: #062F4F
+}
+
+/* mouse over link */
+a:hover {
+  color: #062F4F
+}
+
+/* selected link */
+a:active {
+}
+
 
 h1, h2 {
   font-family: 'Roboto Mono', monospace;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.title {
+  font-family: 'Miller-Regular';
 }
 
 .meow {
-  color: #813772;
+  color: #ffffff;
 }
 
 .issue-color {
-  color: #062F4F;
+  color: red;
 }
 
 .spotlight-name {
   font-size: 50px;
+  color: #ffffff;
 }
+
+.spotlight-header {
+  width: 900px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-top: -10px;
+  border: 2px solid #ffffff;
+}
+
+.spotlight-item {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
 

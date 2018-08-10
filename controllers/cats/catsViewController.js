@@ -1,10 +1,8 @@
 function renderLanding (req, res) {
-  console.log('I am rendering the index page');
   res.render('cats/index');
 }
 
 function sendCats (req, res) {
-  console.log('I am delivering the cats to the page');
   res.render('cats/allCats', {
     cats: res.locals.cats
   })

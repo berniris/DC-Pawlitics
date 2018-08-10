@@ -3,12 +3,14 @@ const db = require('../config/connection');
 
 // get All function
 function getAllCats() {
+  console.log(db)
+  console.log('fetching cats')
   const queryPromise = db.manyOrNone (`
     SELECT * FROM cats`);
   return queryPromise;
 }
 
-// getAllCats().then(data => console.log(data));
+getAllCats().then(data => console.log(data));
 
 // get One function
 function getOneCat(id) {
@@ -28,7 +30,7 @@ function updateCat(cat) {
   return query;
 }
 
-// getUserCats(1).then(data => console.log(data));
+getOneCat(1).then(data => console.log(data));
 
 
 // function getAffiliationByCat(id) {
