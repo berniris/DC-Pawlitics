@@ -1,10 +1,10 @@
 <% include ../../partials/boilerplate %>
 <div>
-<h1 class="spotlight-name"><%=cat.name%></h1>
+<a href="/cats"><h1 class="spotlight-name"><%=cat.name%></h1></a>
 <div class="spotlight-header" style="background-image: url('<%=cat.img_url%>')">
 </div>
 <div class="blurb"> 
-<h1>Issue of Impurrrtance to <%= cat.name%>: <%= cat.issue%></h1>
+<h1>Issue of Impurrtance to <%= cat.name%>: <%= cat.issue%></h1>
 <p><%= cat.blurb%></p>
 <p><%= cat.hashtags%></p>
 </div>
