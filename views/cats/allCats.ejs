@@ -2,7 +2,7 @@
 <% include ../../partials/boilerplate %>
 <h1 class="title">DC Pawlitics</h1>
 <h1 class="instructions">Click on their names to read their thoughts...<h1>
-<div class="flex-container">
+<div class="container">
 <% cats.forEach((cat) => { %>
 
 
@@ -12,7 +12,9 @@
 <div class="cat-header" style="background-image: url('<%=cat.img_url%>')">
 </div>
 </div>
-<p class="issue">Issue of impurrrrtance to <%=cat.name%>: </br> <span class="meow"><%=cat.issue%></span></p>
+<div class="issue">
+<p>Issue of impurrrrtance to <%=cat.name%>: </br> <span class="meow"><%=cat.issue%></span></p>
+</div>
 </div>
 <%}) %>
 </div>

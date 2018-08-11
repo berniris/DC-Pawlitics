@@ -1,42 +1,68 @@
-@import url (https://fonts.googleapis.com/css?family=Dosis);
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 @font-face {
 font-family: "Miller-Regular";
-src: url("css/fonts/Miller-Regular.eot");
-src: url("css/fonts/Miller-Regular.tff");
-src: url("css/fonts/Miller-Regular.woff") format("woff");
-src: url("css/fonts/Miller-Regular.otf") format("opentype");
-src: url("css/fonts/Miller-Regular.svg#filename") format("svg");
-font-weight: normal;
-font-style: normal;
+src: url("fonts/Miller-Regular.ttf");
+src: url("fonts/Miller-Regular.woff") format("woff"),
+url("Miller-Regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: "Salt-Regular";
+src: url("fonts/Salt-Regular.ttf");
+src: url("fonts/Salt-Regular.woff") format("woff"),
+url("Salt-Regular.otf") format("opentype");
 }
 
 
 body {
-  font-family:'Cousine', monospace;
-  background-color: #870000;
+  background: linear-gradient(to left, #870000 0%, #0000cc 100%)
+
 }
 
-.landing-flex {
-  max-width: 50%;
+.landing {
+  font-family: 'Miller-Regular';
+  font-size: 120px;
 }
 
-.landing-img {
-  margin-right: -300px;
-  background-image: url('http://s1.1zoom.me/b2860/974/Creative_Cats_Milk_Highball_glass_Book_Window_525394_2048x1536.jpg');
-  background-size: 400px;
-  width: 300px;
-  height: 300px;
-  border: 2px solid;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-/*  border-bottom: 0;*/
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.landing-container {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 0;
 }
 
-.flex-container {
+.landing-cat {
+  width: .3%;
+  height: .3%;
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 80px;
+  margin-top: 10px;
+  opacity: .8;
+}
+
+.tag-line {
+  font-size: 20px;
+  margin-top: 30px;
+  color: yellow;
+  width: 100%
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.fake-mews {
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-top: -100px;
+}
+
+.container {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -63,12 +89,13 @@ body {
   margin: 0 auto;
   border: 1px solid #ffffff;
   margin-top: 20px;
+  opacity: .8;
 }
 
 .portrait {
   width: 570px;
   height: 300px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   background-color: rgba(128,128,128,0.2);
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,7 +104,7 @@ body {
 
 
 .issue {
-  padding-bottom: 10px;
+  padding-bottom: 200px;
   font-size: 20px;
 }
 
@@ -106,17 +133,35 @@ a:active {
 
 
 h1, h2 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
   color: #ffffff;
 }
 
 .title {
   font-family: 'Miller-Regular';
+  font-weight:normal;
+  font-style:normal;
+  font-size: 100px;
+}
+
+.instructions {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  margin-top: -75px;
+  padding-bottom: 100px;
 }
 
 .meow {
@@ -128,7 +173,8 @@ h2 {
 }
 
 .spotlight-name {
-  font-size: 50px;
+  font-family: 'Miller-Regular';
+  font-size: 80px;
   color: #ffffff;
 }
 
@@ -146,6 +192,18 @@ h2 {
   width: 200px;
   height: 100px;
   text-align: center;
+}
+
+button {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  width: 500px;
+  height: 100px;
+  letter-spacing: 8px;
+  border: none;
+  margin: 10px;
 }
 
 
