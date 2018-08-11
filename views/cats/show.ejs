@@ -1,11 +1,13 @@
 <% include ../../partials/boilerplate %>
 <div>
-<h1 class="hiss spotlight-name spotlight-item issue-color"><%=cat.name%></h1>
+<h1 class="spotlight-name"><%=cat.name%></h1>
 <div class="spotlight-header" style="background-image: url('<%=cat.img_url%>')">
 </div>
-<p>Issue of Impurrrtance to <%= cat.name%>: <%= cat.issue%></p>
+<div class="blurb"> 
+<h1>Issue of Impurrrtance to <%= cat.name%>: <%= cat.issue%></h1>
 <p><%= cat.blurb%></p>
 <p><%= cat.hashtags%></p>
+</div>
  <!-- <br>
    <form action="/cats/<%=cat.id%>/edit" class='put' method="GET">
   <input type="submit" class="editlink" value="Edit">
@@ -14,7 +16,8 @@
   <form action="/cats/<%=cat.id%>?_method=Delete" class='delete' method="POST">
   <input type="submit" class="deletelink" value="Delete">
   </form> -->
-  <button><a href="/cats"> Go back to the Cats </a></button>
+  <button><a href="/">back to Home</a></button>
+  <button><a href="/cats/<%= cat.id+1%>">View the next Cat </a></button>
   </div>
 </div>
 

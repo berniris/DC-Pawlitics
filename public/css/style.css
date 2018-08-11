@@ -85,7 +85,7 @@ body {
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 70% 30%;
+  background-position: 50% 50%;
   margin: 0 auto;
   border: 1px solid #ffffff;
   margin-top: 20px;
@@ -150,11 +150,16 @@ p {
   color: #ffffff;
 }
 
-.title {
+.title , .submit-cat {
   font-family: 'Miller-Regular';
   font-weight:normal;
   font-style:normal;
   font-size: 100px;
+}
+
+.submit-cat {
+  font-size: 70px;
+  margin-bottom: -50px;
 }
 
 .instructions {
@@ -168,19 +173,16 @@ p {
   color: #ffffff;
 }
 
-.issue-color {
-  color: red;
-}
-
 .spotlight-name {
   font-family: 'Miller-Regular';
   font-size: 80px;
+  width: 800px;
   color: #ffffff;
 }
 
 .spotlight-header {
   width: 900px;
-  height: 300px;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -188,10 +190,8 @@ p {
   border: 2px solid #ffffff;
 }
 
-.spotlight-item {
-  width: 200px;
-  height: 100px;
-  text-align: center;
+.blurb {
+  max-width: 70%;
 }
 
 button {
@@ -204,6 +204,19 @@ button {
   letter-spacing: 8px;
   border: none;
   margin: 10px;
+}
+
+input, select, option {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  width: 320px;
+  height: 30px;
+  letter-spacing: 8px;
+  border: none;
+  margin: 10px;
+
 }
 
 
