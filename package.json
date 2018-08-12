@@ -1,37 +1,37 @@
 {
-  "name": "dc-pawlitics",
-  "version": "1.0.0",
-  "description": "# User Story  I am creating an app based off my friend Masha's Instagram account, [DC Fake Mews](https://www.instagram.com/dcfakemews/). Masha collects and posts pictures of cats we know and creates political blurbs in the voice of the cat. Each post is filled with tons of puns and we want [DC Fake Mews](https://www.instagram.com/dcfakemews/) to go viral so I am creating a web app version to increase exposure and get non Instagram folks following.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  },
-  "engines": {
-    "node": "8.9.3",
-    "npm": "5.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/berniris/DC-Pawlitics.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/berniris/DC-Pawlitics/issues"
-  },
-  "homepage": "https://github.com/berniris/DC-Pawlitics#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "dotenv": "^5.0.1",
-    "ejs": "^2.6.1",
-    "express": "^4.16.3",
-    "method-override": "^2.3.10",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.17.5",
-    "pg-promise": "^8.4.4"
-  },
-  "heroku-postbuild": "npm install --production",
-  "devDependencies": {}
+    "name": "dc-pawlitics",
+    "version": "1.0.0",
+    "description": "# User Story  I am creating an app based off my friend Masha's Instagram account, [DC Fake Mews](https://www.instagram.com/dcfakemews/). Masha collects and posts pictures of cats we know and creates political blurbs in the voice of the cat. Each post is filled with tons of puns and we want [DC Fake Mews](https://www.instagram.com/dcfakemews/) to go viral so I am creating a web app version to increase exposure and get non Instagram folks following.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodejs server.js",
+        "dev": "nodemon server.js"
+    },
+    "engines": {
+        "node": "8.11.3",
+        "npm": "5.3.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/berniris/DC-Pawlitics.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/berniris/DC-Pawlitics/issues"
+    },
+    "homepage": "https://github.com/berniris/DC-Pawlitics#readme",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "dotenv": "^5.0.1",
+        "ejs": "^2.6.1",
+        "express": "^4.16.3",
+        "method-override": "^2.3.10",
+        "morgan": "^1.9.0",
+        "nodemon": "^1.17.5",
+        "pg-promise": "^8.4.4"
+    },
+    "heroku-postbuild": "npm install --production",
+    "devDependencies": {}
 }
